@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fef6ff;
+}
+
+.login-container {
+  display: flex;
+  width: 700px;
+  height: 400px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.6s ease-in-out;
+}
+
+.panel {
+  width: 50%;
+  background-color: #0a2e52;
+  color: white;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s ease-in-out;
+}
+
+.form-container {
+  width: 50%;
+  padding: 40px 30px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.6s ease-in-out;
+}
+
+.login-container.slide .panel {
+  transform: translateX(100%);
+}
+
+.login-container.slide .form-container {
+  transform: translateX(-100%);
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+  width: 100%;
+}
+
+.login-btn, .panel button {
+  padding: 10px 20px;
+  background-color: #0a2e52;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover, .panel button:hover {
+  background-color: #0a2e52;
+}
+
+.form-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #0a2e52;
+  margin-bottom: 20px;
+  text-align: center;
+}
